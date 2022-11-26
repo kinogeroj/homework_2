@@ -3,8 +3,16 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
+import os
+import math
 
+os.system('cls')
 
+print('Найдем сумму цифр вещественного числа.')
 
+a = float(input('Введите вещественное число: '))
 
+def float2str(s):
+    return str(s).replace('.', '')
 
+print(f'Сумма цифр во введенном числе равна: {sum(map(int,float2str(str(a))))}.')
